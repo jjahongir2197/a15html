@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Timer</h2>
+
+<h1 id="t">0</h1>
+
+<button onclick="start()">Start</button>
+
+<script>
+let i = 0;
+
+function start(){
+    setInterval(() => {
+        i++;
+        document.getElementById("t").innerHTML = i;
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
